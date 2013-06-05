@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Validation in Javascript</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="validation.js"></script>
+    <style type="text/css" media="screen">
+      span.error { color: red; }
+    </style>
+  </head>
+<body>
+<h1>Validating Input</h1>
+<p>This script will check to see if the inputs (first name, last name) contain any value when the form is submitted. If they both do, the form will submit. Otherwise, the form will notify the user what input they are missing.</p>
+<form method="">
+  <div><label for="f_name">First Name:</label><input type="text" name="f_name" value="" id="f_name"><span id="error_f_name" class="error"></span></div>
+
+  <div><label for="l_name">Last Name:</label><input type="text" name="l_name" value="" id="l_name"><span id="error_l_name" class="error"></span></div>
+<input type="button" id="send" value="Send">
+</form>
+  
+
+</body>
+</html>
