@@ -4,3 +4,8 @@ jQuery Form Validation Examples
 These examples are based on the plain javascript form validation examples located at:
   https://github.com/nested/javascript-form-validation-examples
 
+Internet connection required.
+All examples use HTML to request jQuery from the jQuery CDN. An example URL used is: 
+  http://code.jquery.com/jquery-1.10.0.min.js
+If you do not have an active internet connection, you must supply your own local jQuery script. 
+Otherwise the javascript will fail to execute as expected.
