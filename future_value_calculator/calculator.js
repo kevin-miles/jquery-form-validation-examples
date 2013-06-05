@@ -80,13 +80,9 @@ var calculate = function()
 
 var clear = function()
 {
-    $("#investment").val("");
-    $("#investment_error").text("");
-    $("#interest").val("");
-    $("#interest_error").text("");
-    $("#years").val("");
-    $("#years_error").text("");
-    $("#future").val("");
+    $("#calculator_area :text").each(function(){ $(this).val(""); }); //clear the text from each error class(spans in this case)
+    $("#calculator_area .error").each(function(){ $(this).text(""); }); //clear the text from each error class(spans in this case)
+
 }
 
 $(document).ready(function() {
