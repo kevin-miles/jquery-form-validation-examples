@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MPG Calculator</title>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
+    <style type="text/css" media="screen">
+       label { display: inline-block; width: 125px; text-align: right; margin-right: 5px;}
+       input[type="text"] { width: 200px; }
+       #calculate, #clear { width: 75px; margin-top: 10px; }
+       #calculate { margin-left: 180px; }
+    </style>
+  </head>
+<body>
+  <h1>Miles Per Gallon (MPG) Calculator</h1>
+<section id="calculator_area">
+<p id="instructions">
+  Enter a positive number in the <em>Miles Travelled</em> and <em>Gallons of Gas fields</em>. Click calculate to get the Miles per Gallon based on your input.
+</p>
+<div>
+    <label for="miles">Miles Travelled:</label><input type="text" name="miles" id="miles" value=""><span class="error" id="miles_error"></span>
+</div> 
+<div>
+    <label for="gas">Gallons of Gas:</label><input type="text" name="gas" id="gas" value=""><span class="error" id="gas_error"></span>
+</div> 
+<div>
+    <label for="mpg">Miles Per Gallon:</label><input type="text" name="mpg" id="mpg" value="" disabled>
+</div> 
+<input type="submit" id="calculate" value="Calculate">
+<input type="button" id="clear" value="Clear">
+</section>
+</body>
+</html>
