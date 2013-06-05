@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Future Value Calculator</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
+    <style type="text/css" media="screen">
+       label { display: inline-block; width: 150px; text-align: right; margin-right: 5px;}
+       input[type="text"] { width: 200px; }
+       span.error { color: red; }
+       #calculate, #clear { width: 75px; margin-top: 10px; }
+       #calculate { margin-left: 205px; }
+    </style>
+  </head>
+<body>
+  <h1>Future Value Calculator</h1>
+<section id="calculator_area">
+<p id="instructions">
+  Enter the <em>Investment Amount</em>, <em>Annual Interest Rate</em>, and <em>Years</em> with positive numeric values. Press the <em>Calculate</em> button and the program will calculate the future value and display it in the disabled text box.
+</p>
+<div>
+    <label for="investment">Investment Amount:</label><input type="text" name="investment" id="investment"><span class="error" id="investment_error"></span>
+</div> 
+<div>
+    <label for="interest">Annual Interest Rate:</label><input type="text" name="interest" id="interest"><span class="error" id="interest_error"></span>
+</div> 
+<div>
+    <label for="years">Years:</label><input type="text" name="years" id="years"><span class="error" id="years_error"></span>
+</div> 
+<div>
+    <label for="future">Future Value:</label><input type="text" name="future" id="future" disabled>
+</div> 
+<input type="submit" id="calculate" value="Calculate">
+<input type="button" id="clear" value="Clear">
+</section>
+</body>
+</html>
